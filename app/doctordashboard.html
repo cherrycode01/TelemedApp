@@ -56,20 +56,22 @@
 
 <div class="container">
 
-    <nav class="navbar">
-        <button name="button" onclick="window.location.href='doctordashboard.html'"><img src="telemedcrop.png"
-                                                                                         alt="telemedlogo" width="150" height="100"></button>
-        <button name="button" onclick="window.location.href='doctordashboard.html'"><img src="person.png"
-                                                                                         alt="person" width="100" height="100">Doktor</button>
-    </nav>
+    <header>
+        <button style="float: left;" name="button" onclick="window.location.href='doctordashboard.html'"><img
+                src="telemedcrop.png" alt="telemedlogo" width="150" height="100"></button>
+        <button style="float: right;" name="button" onclick="window.location.href='doctordashboard.html'"><img
+                src="person.png" alt="person" width="100" height="100">Dr. Joško Burić</button>
+    </header> <br><br><br><br>
     <!-- <header><button onclick="window.location.href='doctordashboard.html'"><img src="telemedcrop.png"
                 alt="telemedlogo" style="text-align: left;" width="150" height="100"></button> <button
             style="text-align: right;" onclick="window.location.href='patientrecord.html'"><img src="person.png"
                 alt="person" width="100" height="100">Doktor</button>
     </header>-->
-    <center>
-        <h1>Evidencija svih pacijenata</h1>
-    </center>
+    <div>
+        <center>
+            <h1>Evidencija svih pacijenata</h1>
+        </center>
+    </div>
 
     <form action="action_page.php">
         <input type="text" placeholder="Traži" name="search">
@@ -89,8 +91,8 @@
         <tbody>
         <tr class="clickable" onclick="window.location='doctorcheckrecords.html'">
             <td>1</td>
-            <td>Maria</td>
-            <td>Mesarić</td>
+            <td>Baka</td>
+            <td>Bakić</td>
             <td>123456789</td>
             <td><a href="#" onclick="deleteRow(this);">Izbriši</a></td>
         </tr>
@@ -118,9 +120,6 @@
     <button type="button" class="btn btn-danger btn-block mb-4" style="font-size: 20px; background-color: #ae0640;"
             onclick="window.location.href='doctorcreatepatient.html'">Dodaj novog pacijenta</button>
 
-    <center>
-        <footer style="color: #ae0640;">Copyright &#169; Telemed / All rights reserved</footer>
-    </center>
 </div>
 
 </body>
