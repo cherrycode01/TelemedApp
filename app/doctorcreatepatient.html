@@ -41,6 +41,16 @@
         .container {
             padding: 25px
         }
+
+        footer {
+            font-size: 1.3rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 2rem;
+            color: #ae0640;
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -54,13 +64,13 @@
                 src="telemedcrop.png" alt="telemedlogo" width="150" height="100"></button>
         <button style="float: right;" name="button" onclick="window.location.href='doctordashboard.html'"><img
                 src="person.png" alt="person" width="100" height="100">Dr. Joško Burić</button>
-    </header> <br><br><br><br>
+    </header>
 
     <center>
         <h1>Unos informacija o pacijentu</h1>
     </center>
 
-    <form>
+    <form style="margin-top: 8%;">
 
         <div class="form-outline mb-4">
             <label for="fname">Ime</label>
@@ -110,7 +120,9 @@
 
     </form>
 
+
 </div>
+<footer class="d-none d-xl-block">&copy; Telemed 2023 Health IT. All rights reserved.</footer>
 </body>
 
 </html>

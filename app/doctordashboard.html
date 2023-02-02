@@ -46,6 +46,16 @@
             cursor: pointer;
             background-color: #ccc;
         }
+
+        footer {
+            font-size: 1.3rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2rem;
+            color: #ae0640;
+            text-align: center;
+        }
     </style>
 
     <title>Popis pacijenata</title>
@@ -61,19 +71,15 @@
                 src="telemedcrop.png" alt="telemedlogo" width="150" height="100"></button>
         <button style="float: right;" name="button" onclick="window.location.href='doctordashboard.html'"><img
                 src="person.png" alt="person" width="100" height="100">Dr. Joško Burić</button>
-    </header> <br><br><br><br>
-    <!-- <header><button onclick="window.location.href='doctordashboard.html'"><img src="telemedcrop.png"
-                alt="telemedlogo" style="text-align: left;" width="150" height="100"></button> <button
-            style="text-align: right;" onclick="window.location.href='patientrecord.html'"><img src="person.png"
-                alt="person" width="100" height="100">Doktor</button>
-    </header>-->
+    </header>
+
     <div>
         <center>
             <h1>Evidencija svih pacijenata</h1>
         </center>
     </div>
 
-    <form action="action_page.php">
+    <form action="action_page.php" style="margin-top: 8%;">
         <input type="text" placeholder="Traži" name="search">
     </form>
 
@@ -83,6 +89,7 @@
             <th>rb.</th>
             <th>Ime</th>
             <th>Prezime</th>
+            <th>Datum rođenja</th>
             <th>MBO</th>
             <th>Izbriši</th>
         </tr>
@@ -93,6 +100,7 @@
             <td>1</td>
             <td>Baka</td>
             <td>Bakić</td>
+            <td>1.4.1969.</td>
             <td>123456789</td>
             <td><a href="#" onclick="deleteRow(this);">Izbriši</a></td>
         </tr>
@@ -101,6 +109,7 @@
             <td>2</td>
             <td>Damjan</td>
             <td>Znika</td>
+            <td>9.9.2000.</td>
             <td>223456789</td>
             <td><a href="#" onclick="deleteRow(this);">Izbriši</a></td>
         </tr>
@@ -109,6 +118,7 @@
             <td>3</td>
             <td>Branimir</td>
             <td>Golub</td>
+            <td>5.5.1995.</td>
             <td>323456789</td>
             <td><a href="#" onclick="deleteRow(this);">Izbriši</a></td>
         </tr>
@@ -121,7 +131,7 @@
             onclick="window.location.href='doctorcreatepatient.html'">Dodaj novog pacijenta</button>
 
 </div>
-
+<footer class="d-none d-xl-block">&copy; Telemed 2023 Health IT. All rights reserved.</footer>
 </body>
 
 </html>
